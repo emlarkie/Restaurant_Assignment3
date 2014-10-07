@@ -1,0 +1,23 @@
+<h1>List Of Menus</h1>
+<div class="menu"/>
+<ul>
+<li><a href="menu.html">Sunday 8/24/14</a></li>
+<li><a href="menu.html">Friday 10/3/14</a></li>
+<li><a href="menu.html">Monday 10/6/14</a></li>
+</ul>
+</div>
+
+<script>
+GET /_search
+{
+    "query": {
+        "template": {
+            "query": {"match_{{template}}": {}},
+            "params" : {
+                "template" : "all"
+            }
+        }
+    }
+}
+</script>
+<!--Code for this javascript from elasticsearch.com-->

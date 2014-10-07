@@ -1,0 +1,16 @@
+menu.html
+-Get menu.html
+Error: No menu
+Status Code: 200 OK (no menu is present yet)
+-Post menu.html
+Error: No error (unless missing required info for posting)
+Status Code: 200 OK or 201 Created
+-Get Menu <i>menu date</i>
+Error: No error
+Status Code: 200 OK (returns today's menu) 
+-Put Menu <i>menu date</i>
+Error: 400 Bad Request or 404 Not Found 
+Status Code: 200 OK (updated menu) 
+-Delete Menu <i>menu date</i> 
+Error: 404 not found (once deleted) 
+Status Code: 200 OK or 204 Resource Deleted successfully 

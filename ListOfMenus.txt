@@ -1,0 +1,10 @@
+ListOfMenus.html
+-Get ListOfMenus.html
+Error: No Menus 
+Status Code: 200 OK (no menus are present yet)
+-Post ListOfMenus.html
+Error: No error (unless missing required info for posting)
+Status Code: 201 Created or 404 if all information is not present 
+-Get ListOfMenus.html
+Error: No error
+Status Code: 200 OK (returns the list of menus)

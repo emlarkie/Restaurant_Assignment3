@@ -1,0 +1,16 @@
+Dish.html
+-Get Dish.html
+Error: No dish 
+Status Code: 200 OK (no dish is present yet)
+-Post Dish.html
+Error: No error (unless missing required info for posting)
+Status Code: 200 OK or 201 Created
+-Get Dish <i>dish name</i>
+Error: No error
+Status Code: 200 OK (returns the dish) 
+-Put Dish <i>dish name</i>
+Error: 400 Bad Request or 404 Not Found 
+Status Code: 200 OK (updated dish) 
+-Delete Dish <i>dish name</i> 
+Error: 404 not found (once deleted) 
+Status Code: 200 OK or 204 Resource deleted successfully

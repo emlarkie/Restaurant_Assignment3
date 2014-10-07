@@ -1,0 +1,21 @@
+<h1>Welcome to Restaurante de Larkin</h1>
+
+<ul>
+<li><a rel "newitem" href="Dish.html">Add a Dish</a></li>
+<li><a href="menu.html">Today's Menu</a></li>
+<li><a rel "booking" href="Reservation.html">Make a Reservation</a></li>
+<li><a href="ListOfMenus.html">View All Menus</a></li>
+<li><a href="ListOfReservations.html">View the List of Reservations</a></li> 
+
+GET /_search
+{
+    "query": {
+        "template": {
+            "query": {"match_{{template}}": {}},
+            "params" : {
+                "template" : "all"
+            }
+        }
+    }
+}
+<!--Code for this javascript from elasticsearch.com-->

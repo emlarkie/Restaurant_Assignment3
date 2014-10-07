@@ -1,0 +1,33 @@
+<h1>Restaurante de Larkin</h1>
+
+<h2>October 6, 2014</h2>
+<br></br>
+<div class="dish">
+<h3>Appetizer</h3>
+<h4><a href="Dish.html">Meatball Parmigiana Sliders $6.00</a></h4>
+<p>Meatballs coated in marinara sauce, covered with cheese, and sandwiched into brioche rolls</p>
+<p>Contains: Milk, Beef, Pork, Veal, Cheese, Egg, Garlic, Parsley, Cheese, Marinara Sauce, Brioche Rolls</p>
+<br></br>
+<h3>Entree</h3>
+<h4><a href="Dish.html">Spaghetti with Marinara Sauce $11.00</a></h4>
+<p>Whole Wheat Spaghetti soaked in Olive Oil with Marinara Sauce. Served with a breadstick.</p>
+<p>Contains: Olive Oil, Whole Wheat, Marinara Sauce, Salt, Butter</p>
+<br></br>
+<h3>Desserts</h3>
+<p><a href="Dish.html">To be filled in</a></p>
+<p>Description</p>
+<p>Contains:</p>
+</div>
+
+GET /_search
+{
+    "query": {
+        "template": {
+            "query": {"match_{{template}}": {}},
+            "params" : {
+                "template" : "all"
+            }
+        }
+    }
+}
+<!--Code for this javascript from elasticsearch.com-->

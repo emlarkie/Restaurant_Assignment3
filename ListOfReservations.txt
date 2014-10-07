@@ -1,0 +1,10 @@
+ListOfReservations.html
+-Get ListOfReservations.html
+Error: No reservations 
+Status Code: 200 OK (no reservations are present yet)
+-Post ListOfReservations.html
+Error: No error (unless missing required info for posting)
+Status Code: 201 Created or 404 if all information is not present 
+-Get ListOfReservations.html
+Error: No error
+Status Code: 200 OK (returns the list of reservations) 

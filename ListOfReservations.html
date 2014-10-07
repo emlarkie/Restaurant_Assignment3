@@ -1,0 +1,38 @@
+<h1>List Of Reservations</h1>
+
+ <table border="2" style="width:100%">
+  <div class="reservation">
+  <tr>
+	<td>Reservation Time</td>
+	<td>Name</td>
+	<td>Number in Party</td>
+  <tr>
+    <td>6:00PM</td>
+    <td><a href="Reservation.html">Jones</a></td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>7:30PM</td>
+    <td><a href="Reservation.html">Williams</a></td>
+    <td>8</td>
+  </tr>
+  <tr>
+	<td>8:00PM</td>
+	<td><a href="Reservation.html">Johnson</a></td>
+	<td>4</td>
+  </tr>
+  </div>
+</table> 
+
+GET /_search
+{
+    "query": {
+        "template": {
+            "query": {"match_{{template}}": {}},
+            "params" : {
+                "template" : "all"
+            }
+        }
+    }
+}
+<!--Code for this javascript from elasticsearch.com-->
